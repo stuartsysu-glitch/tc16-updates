@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "product": "TC16",
+  "version": "3.1.6",
+  "tag": "v3.1.6",
+  "published_at": "2026-07-15",
+  "mandatory": false,
+  "download_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.1.6/TC16-v3.1.6.zip",
+  "size": 76400581,
+  "sha256": "cb55496abea5de5386731dc15b111c76da3370b76b8af369abb1305954ed7794",
+  "release_notes": [
+    "首次建立 TC16 公开下载与版本清单。",
+    "提供 Windows 64 位便携版软件包。",
+    "发布包不包含用户 Data、Log 或 CSV 文件。"
+  ]
+}
