@@ -1,16 +1,21 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "product": "TC16",
-  "version": "3.1.6",
-  "tag": "v3.1.6",
+  "version": "3.2.0",
   "published_at": "2026-07-15",
+  "installer_name": "TC16-v3.2.0-20260715-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.0/TC16-v3.2.0-20260715-Setup.exe",
+  "size": 170321698,
+  "sha256": "1d71caa2d26758b7e3b6f7ff47e013b0124104717d63f4f2cb1dfe15a8d4d353",
   "mandatory": false,
-  "download_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.1.6/TC16-v3.1.6.zip",
-  "size": 76400581,
-  "sha256": "cb55496abea5de5386731dc15b111c76da3370b76b8af369abb1305954ed7794",
   "release_notes": [
-    "首次建立 TC16 公开下载与版本清单。",
-    "提供 Windows 64 位便携版软件包。",
-    "发布包不包含用户 Data、Log 或 CSV 文件。"
+    "新增按用户安装的 Windows 安装程序。",
+    "新增状态栏软件更新按钮。",
+    "新增后台下载、SHA-256 校验、静默安装、失败恢复和自动重启。",
+    "新增旧版 CSV 数据导入功能。",
+    "将 CSV、Log、Settings、Updates 和 Backup 改为固定用户目录。",
+    "取消用户自定义自动保存目录。",
+    "统一 GUI、安装程序、网站和发布流程的软件版本号。",
+    "修复安装或更新程序文件时可能影响用户数据的问题。"
   ]
 }

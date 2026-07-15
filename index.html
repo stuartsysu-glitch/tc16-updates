@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="TC16 极低温控温仪控制平台官方软件下载页面。">
   <title>TC16 软件更新与下载</title>
-  <link rel="icon" href="logo_gd.jpg">
+  <link rel="icon" href="logo_mark.png">
   <style>
     :root {
       color-scheme: light;
@@ -16,12 +16,11 @@
       --accent: #c9212d;
       --accent-dark: #a91823;
       --success: #157454;
+      --danger: #a91823;
       --white: #ffffff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -32,9 +31,7 @@
       line-height: 1.65;
     }
 
-    a {
-      color: inherit;
-    }
+    a { color: inherit; }
 
     .shell {
       width: min(1080px, calc(100% - 40px));
@@ -57,15 +54,14 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       min-width: 0;
     }
 
     .brand img {
       width: 58px;
       height: 58px;
-      object-fit: cover;
-      border-radius: 6px;
+      object-fit: contain;
     }
 
     .brand-name {
@@ -87,9 +83,7 @@
     }
 
     .header-link:hover,
-    .header-link:focus-visible {
-      color: var(--accent);
-    }
+    .header-link:focus-visible { color: var(--accent); }
 
     .release-band {
       background: var(--surface);
@@ -99,10 +93,10 @@
     .release-inner {
       min-height: 330px;
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
+      grid-template-columns: minmax(0, 1fr) 340px;
       align-items: center;
-      gap: 64px;
-      padding-block: 52px;
+      gap: 60px;
+      padding-block: 50px;
     }
 
     .eyebrow {
@@ -158,7 +152,7 @@
     }
 
     .download-panel p {
-      margin: 8px 0 20px;
+      margin: 8px 0 18px;
       color: var(--muted);
       font-size: 14px;
     }
@@ -184,18 +178,44 @@
       background: var(--accent-dark);
     }
 
+    .download-button[aria-disabled="true"] {
+      pointer-events: none;
+      border-color: #9ca3af;
+      background: #9ca3af;
+    }
+
     .download-icon {
       font-size: 21px;
       line-height: 1;
     }
 
+    .installer-file {
+      min-height: 42px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+      text-align: center;
+    }
+
     .secondary-link {
       display: block;
-      margin-top: 14px;
+      margin-top: 10px;
       color: var(--muted);
       font-size: 13px;
       text-align: center;
     }
+
+    .page-status {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .page-status.error { color: var(--danger); }
 
     main section {
       padding-block: 44px;
@@ -214,23 +234,18 @@
       line-height: 1.4;
     }
 
-    .section-copy {
-      min-width: 0;
-    }
+    .section-copy { min-width: 0; }
 
     .section-copy p:first-child,
-    .section-copy ul:first-child {
-      margin-top: 0;
-    }
+    .section-copy ul:first-child,
+    .section-copy ol:first-child { margin-top: 0; }
 
     .section-copy p:last-child,
-    .section-copy ul:last-child {
-      margin-bottom: 0;
-    }
+    .section-copy ul:last-child,
+    .section-copy ol:last-child { margin-bottom: 0; }
 
-    .section-copy ul {
-      padding-left: 20px;
-    }
+    .section-copy ul,
+    .section-copy ol { padding-left: 22px; }
 
     code {
       overflow-wrap: anywhere;
@@ -261,59 +276,26 @@
     }
 
     @media (max-width: 760px) {
-      .shell {
-        width: min(100% - 28px, 1080px);
-      }
-
-      .header-inner {
-        min-height: 76px;
-      }
-
-      .brand img {
-        width: 48px;
-        height: 48px;
-      }
-
-      .brand-name {
-        font-size: 21px;
-      }
-
+      .shell { width: min(100% - 28px, 1080px); }
+      .header-inner { min-height: 76px; }
+      .brand img { width: 48px; height: 48px; }
+      .brand-name { font-size: 21px; }
       .brand-subtitle,
-      .header-link {
-        display: none;
-      }
-
+      .header-link { display: none; }
       .release-inner {
         min-height: 0;
         grid-template-columns: 1fr;
         gap: 30px;
         padding-block: 38px;
       }
-
-      h1 {
-        font-size: 31px;
-      }
-
-      .download-panel {
-        padding: 20px;
-      }
-
-      .section-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
+      h1 { font-size: 31px; }
+      .download-panel { padding: 20px; }
+      .section-grid { grid-template-columns: 1fr; gap: 18px; }
     }
 
     @media (max-width: 390px) {
-      .release-meta {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .release-meta span {
-        padding: 0;
-        border-left: 0;
-      }
+      .release-meta { display: grid; grid-template-columns: 1fr; }
+      .release-meta span { padding: 0; border-left: 0; }
     }
   </style>
 </head>
@@ -321,7 +303,7 @@
   <header class="site-header">
     <div class="shell header-inner">
       <div class="brand">
-        <img src="logo_gd.jpg" alt="国盾量子标志">
+        <img src="logo_mark.png" alt="国盾量子标志">
         <div>
           <p class="brand-name">TC16</p>
           <p class="brand-subtitle">极低温控温仪控制平台</p>
@@ -335,23 +317,25 @@
     <div class="shell release-inner">
       <div>
         <p class="eyebrow">最新稳定版本</p>
-        <h1>TC16 v3.1.6</h1>
-        <p class="release-summary">适用于 Windows 64 位系统的便携版控制软件。下载 ZIP 后解压，即可运行 TC16 主程序。</p>
+        <h1 id="version-text">TC16</h1>
+        <p class="release-summary">适用于 Windows 10 / 11 64 位系统。首次使用下载安装程序，后续版本可在 TC16 软件内完成更新。</p>
         <div class="release-meta" aria-label="版本信息">
-          <span>发布于 2026-07-15</span>
-          <span>约 72.9 MiB</span>
-          <span>Windows 10 / 11</span>
+          <span id="published-date">正在读取发布日期</span>
+          <span id="installer-size">正在读取文件大小</span>
+          <span>Windows 10 / 11 64 位</span>
         </div>
       </div>
 
       <aside class="download-panel" aria-label="软件下载">
-        <h2>Windows 便携版</h2>
-        <p>软件包不包含用户 CSV、Data 或 Log 文件。</p>
-        <a class="download-button" href="https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.1.6/TC16-v3.1.6.zip">
+        <h2>Windows 安装程序</h2>
+        <p>按当前用户安装到 C 盘，不需要管理员权限。</p>
+        <a id="download-link" class="download-button" href="https://github.com/stuartsysu-glitch/tc16-updates/releases" aria-disabled="true">
           <span class="download-icon" aria-hidden="true">&#8595;</span>
-          <span>下载 TC16 v3.1.6</span>
+          <span>正在读取最新版本</span>
         </a>
+        <div id="installer-name" class="installer-file">-</div>
         <a class="secondary-link" href="latest.json">查看版本清单</a>
+        <div id="page-status" class="page-status" role="status" aria-live="polite">正在读取最新版本…</div>
       </aside>
     </div>
   </div>
@@ -359,14 +343,24 @@
   <main>
     <section>
       <div class="shell section-grid">
-        <h2>安装方式</h2>
+        <h2>首次安装</h2>
         <div class="section-copy">
           <ol>
-            <li>下载并完整解压 <code>TC16-v3.1.6.zip</code>。</li>
-            <li>打开解压后的 <code>TC16-v3.1.6</code> 文件夹。</li>
-            <li>运行 <code>TC16-v3.1.6.exe</code>。</li>
+            <li>下载页面上方显示的 <code>.exe</code> 安装程序。</li>
+            <li>双击安装程序，按向导完成安装。</li>
+            <li>从桌面或开始菜单启动 TC16。</li>
           </ol>
-          <p>请勿直接在 ZIP 压缩包内运行程序。</p>
+          <p>从 v3.2.0 开始，程序文件与 CSV、Log、Settings 分开保存。安装或卸载不会删除用户数据。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell section-grid">
+        <h2>软件内更新</h2>
+        <div class="section-copy">
+          <p>安装 v3.2.0 后，后续版本可在 TC16 右下角点击蓝色“更新”按钮。软件会自动下载、校验、安装并重新启动。</p>
+          <p>正在使用 v3.1.6 或更早版本的用户，需要先从本页面手动安装一次 v3.2.0。</p>
         </div>
       </div>
     </section>
@@ -375,10 +369,8 @@
       <div class="shell section-grid">
         <h2>本版说明</h2>
         <div class="section-copy">
-          <ul>
-            <li>首次建立 TC16 公开下载与机器可读版本清单。</li>
-            <li>提供 Windows 64 位便携版软件包。</li>
-            <li>发布包不包含用户 Data、Log 或 CSV 文件。</li>
+          <ul id="release-notes">
+            <li>正在读取修改记录…</li>
           </ul>
         </div>
       </div>
@@ -388,8 +380,8 @@
       <div class="shell section-grid">
         <h2>文件校验</h2>
         <div class="section-copy">
-          <p>下载完成后可使用 SHA-256 核对文件完整性：</p>
-          <code class="checksum">cb55496abea5de5386731dc15b111c76da3370b76b8af369abb1305954ed7794</code>
+          <p>下载完成后可使用 SHA-256 核对安装包完整性：</p>
+          <code id="installer-sha256" class="checksum">正在读取 SHA-256…</code>
         </div>
       </div>
     </section>
@@ -401,5 +393,61 @@
       <span>更新元数据：<a href="latest.json">latest.json</a></span>
     </div>
   </footer>
+
+  <script>
+    const releasesUrl = "https://github.com/stuartsysu-glitch/tc16-updates/releases";
+    const versionText = document.getElementById("version-text");
+    const publishedDate = document.getElementById("published-date");
+    const installerSize = document.getElementById("installer-size");
+    const installerName = document.getElementById("installer-name");
+    const installerSha256 = document.getElementById("installer-sha256");
+    const downloadLink = document.getElementById("download-link");
+    const releaseNotes = document.getElementById("release-notes");
+    const pageStatus = document.getElementById("page-status");
+
+    function formatMiB(bytes) {
+      return `${(Number(bytes) / 1024 / 1024).toFixed(2)} MiB`;
+    }
+
+    function validateManifest(manifest) {
+      const required = ["version", "published_at", "installer_name", "installer_url", "size", "sha256", "release_notes"];
+      if (manifest.schema_version !== 2 || manifest.product !== "TC16" || required.some((key) => !manifest[key])) {
+        throw new Error("版本清单格式无效");
+      }
+      if (!Array.isArray(manifest.release_notes)) {
+        throw new Error("修改记录格式无效");
+      }
+    }
+
+    fetch("latest.json", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((manifest) => {
+        validateManifest(manifest);
+        versionText.textContent = `TC16 v${manifest.version}`;
+        publishedDate.textContent = `发布于 ${manifest.published_at}`;
+        installerSize.textContent = formatMiB(manifest.size);
+        installerName.textContent = manifest.installer_name;
+        installerSha256.textContent = manifest.sha256;
+        downloadLink.href = manifest.installer_url;
+        downloadLink.removeAttribute("aria-disabled");
+        downloadLink.querySelector("span:last-child").textContent = `下载 v${manifest.version}`;
+        releaseNotes.replaceChildren(...manifest.release_notes.map((note) => {
+          const item = document.createElement("li");
+          item.textContent = note;
+          return item;
+        }));
+        pageStatus.textContent = "已加载最新版本";
+      })
+      .catch((error) => {
+        downloadLink.href = releasesUrl;
+        downloadLink.removeAttribute("aria-disabled");
+        downloadLink.querySelector("span:last-child").textContent = "前往 GitHub Releases";
+        pageStatus.textContent = `无法读取最新版本：${error.message}`;
+        pageStatus.classList.add("error");
+      });
+  </script>
 </body>
 </html>
