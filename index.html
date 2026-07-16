@@ -318,7 +318,7 @@
       <div>
         <p class="eyebrow">最新稳定版本</p>
         <h1 id="version-text">TC16</h1>
-        <p class="release-summary">适用于 Windows 10 / 11 64 位系统。首次使用下载安装程序，后续版本可在 TC16 软件内完成更新。</p>
+        <p class="release-summary">TC16 Windows 控制软件，适用于 Windows 10 / 11 64 位系统。</p>
         <div class="release-meta" aria-label="版本信息">
           <span id="published-date">正在读取发布日期</span>
           <span id="installer-size">正在读取文件大小</span>
@@ -328,7 +328,7 @@
 
       <aside class="download-panel" aria-label="软件下载">
         <h2>Windows 安装程序</h2>
-        <p>按当前用户安装到 C 盘，不需要管理员权限。</p>
+        <p>无需管理员权限，支持覆盖安装。</p>
         <a id="download-link" class="download-button" href="https://github.com/stuartsysu-glitch/tc16-updates/releases" aria-disabled="true">
           <span class="download-icon" aria-hidden="true">&#8595;</span>
           <span>正在读取最新版本</span>
@@ -343,14 +343,14 @@
   <main>
     <section>
       <div class="shell section-grid">
-        <h2>首次安装</h2>
+        <h2>下载安装</h2>
         <div class="section-copy">
           <ol>
-            <li>下载页面上方显示的 <code>.exe</code> 安装程序。</li>
-            <li>双击安装程序，按向导完成安装。</li>
+            <li>下载页面上方的 Windows 安装程序。</li>
+            <li>双击运行，按提示完成安装。</li>
             <li>从桌面或开始菜单启动 TC16。</li>
           </ol>
-          <p>从 v3.2.0 开始，程序文件与 CSV、Log、Settings 分开保存。安装或卸载不会删除用户数据。</p>
+          <p>覆盖安装会保留原有数据和设置。</p>
         </div>
       </div>
     </section>
@@ -359,8 +359,8 @@
       <div class="shell section-grid">
         <h2>软件内更新</h2>
         <div class="section-copy">
-          <p>正在使用 v3.2.0 或更早版本的用户，需要从本页面手动安装一次 v3.2.1，无需先卸载旧版。</p>
-          <p>从 v3.2.1 起，后续版本可在 TC16 右下角点击蓝色“更新”按钮。软件会自动下载、校验、安装并重新启动。</p>
+          <p><strong>v3.2.0 及更早版本：</strong>请从本页面下载最新版并覆盖安装。</p>
+          <p><strong>v3.2.1 及后续版本：</strong>可在 TC16 右下角点击“更新”。</p>
         </div>
       </div>
     </section>
@@ -380,7 +380,7 @@
       <div class="shell section-grid">
         <h2>文件校验</h2>
         <div class="section-copy">
-          <p>下载完成后可使用 SHA-256 核对安装包完整性：</p>
+          <p>如需验证下载完整性，可核对 SHA-256：</p>
           <code id="installer-sha256" class="checksum">正在读取 SHA-256…</code>
         </div>
       </div>
