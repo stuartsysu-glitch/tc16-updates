@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "published_at": "2026-07-16",
-  "installer_name": "TC16-v3.2.1-20260716-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.1/TC16-v3.2.1-20260716-Setup.exe",
-  "size": 170309925,
-  "sha256": "58510eeafb3152c8ee26db58a84bb9ceade49cadd468aa6d2784667b90459f6a",
+  "installer_name": "TC16-v3.2.2-20260716-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.2/TC16-v3.2.2-20260716-Setup.exe",
+  "size": 170298647,
+  "sha256": "fd185adf7c901e49dc9ca360b04875813cf9363faaa22b173426ebd31d1add4e",
   "mandatory": false,
   "release_notes": [
-    "安装程序支持简体中文和英文，默认使用简体中文。",
-    "修复设备曲线导出提示显示异常的问题。",
-    "修复更新器在主程序关闭后未能继续安装的问题。",
+    "更新清单和安装包下载请求使用当前 TC16 版本作为客户端标识。",
+    "修复已是最新版本时仍短暂显示正在下载的问题。",
+    "为独立更新器增加持久日志，记录更新阶段、结果和失败原因。",
     "v3.2.0 及更早版本请从下载页面手动安装最新版；v3.2.1 及后续版本可继续使用软件内更新。"
   ]
 }
