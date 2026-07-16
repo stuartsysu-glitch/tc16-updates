@@ -5,12 +5,13 @@
   "published_at": "2026-07-16",
   "installer_name": "TC16-v3.2.1-20260716-Setup.exe",
   "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.1/TC16-v3.2.1-20260716-Setup.exe",
-  "size": 170315576,
-  "sha256": "b9085d78df7e5c2271160d929808e5b4c3e37a47d369784cf5910ab95e06cf89",
+  "size": 170309925,
+  "sha256": "58510eeafb3152c8ee26db58a84bb9ceade49cadd468aa6d2784667b90459f6a",
   "mandatory": false,
   "release_notes": [
     "安装程序增加简体中文和英文语言选择，默认使用简体中文。",
     "将简体中文安装语言文件随工程保存，便于在不同电脑上重复构建。",
-    "修复设备曲线导出时操作日志、对话框和状态栏显示问号的问题。"
+    "修复设备曲线导出时操作日志、对话框和状态栏显示问号的问题。",
+    "修复 Windows 更新器在主程序退出后因进程检测错误而提前结束的问题。"
   ]
 }
