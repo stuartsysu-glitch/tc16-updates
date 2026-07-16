@@ -17,8 +17,8 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 
 ### 升级说明
 
-- `v3.2.0` 及更早版本：请从下载页面获取最新版并覆盖安装，无需先卸载旧版。
-- `v3.2.1` 及后续版本：可在 TC16 右下角点击“更新”完成后续升级。
+- `v3.2.3` 及更早版本：请从下载页面获取最新版并覆盖安装，无需先卸载旧版。
+- `v3.2.4` 及后续版本：可在 TC16 右下角点击“更新”完成后续升级。
 
 ### 仓库内容
 
@@ -41,8 +41,8 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 
 ### Updates
 
-- `v3.2.0` and earlier: download the latest version from the download page and install it over the existing version. Uninstalling first is not required.
-- `v3.2.1` and later: use the **Update** button in the lower-right corner of TC16 for future updates.
+- `v3.2.3` and earlier: download the latest version from the download page and install it over the existing version. Uninstalling first is not required.
+- `v3.2.4` and later: use the **Update** button in the lower-right corner of TC16 for future updates.
 
 ### Repository contents
 
