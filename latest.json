@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.2",
+  "version": "3.2.4",
   "published_at": "2026-07-16",
-  "installer_name": "TC16-v3.2.2-20260716-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.2/TC16-v3.2.2-20260716-Setup.exe",
-  "size": 170298647,
-  "sha256": "fd185adf7c901e49dc9ca360b04875813cf9363faaa22b173426ebd31d1add4e",
+  "installer_name": "TC16-v3.2.4-20260716-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.4/TC16-v3.2.4-20260716-Setup.exe",
+  "size": 170322918,
+  "sha256": "9b28ba39965cafcf1aa18aa7488878bcfb13ae12c289f439a9a3aa7e61fbdf39",
   "mandatory": false,
   "release_notes": [
-    "更新清单和安装包下载请求使用当前 TC16 版本作为客户端标识。",
-    "修复已是最新版本时仍短暂显示正在下载的问题。",
-    "为独立更新器增加持久日志，记录更新阶段、结果和失败原因。",
-    "v3.2.0 及更早版本请从下载页面手动安装最新版；v3.2.1 及后续版本可继续使用软件内更新。"
+    "使用 Windows 原生进程状态查询，修复主程序退出后更新器可能在安装前结束的问题。",
+    "完成 v3.2.3 到 v3.2.4 的自动更新链路验证。",
+    "v3.2.3 及更早版本请从下载页面手动安装最新版，无需先卸载旧版。",
+    "v3.2.4 及后续版本可继续使用软件内更新。"
   ]
 }
