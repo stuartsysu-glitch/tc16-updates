@@ -1,17 +1,16 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.6",
+  "version": "3.2.7",
   "published_at": "2026-07-17",
-  "installer_name": "TC16-v3.2.6-20260717-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.6/TC16-v3.2.6-20260717-Setup.exe",
-  "size": 170349733,
-  "sha256": "4e0c25e5ed1bef981f30d18208b09264bbba6881566492cf0bc8b76973b86b03",
+  "installer_name": "TC16-v3.2.7-20260717-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.7/TC16-v3.2.7-20260717-Setup.exe",
+  "size": 170315054,
+  "sha256": "d7b55082e5d35815f83d0c6b0fda8de3d5accd905d2f3ec57117c521d932635e",
   "mandatory": false,
   "release_notes": [
-    "已完成 v3.2.5 到 v3.2.6 的软件内更新验证。",
-    "默认安装目录和自定义安装目录均可正常完成下载、安装和自动重启。",
-    "更新过程会自动备份程序文件，并保留 Data、Log 和 Settings。",
-    "本版本不包含其他业务功能变化。"
+    "修复高级页面日志路径过长时左右布局比例失衡的问题。",
+    "高级页面底部“前端增益状态”和“操作日志/更新”保持 1:1 布局。",
+    "完整日志路径仍可选择，并可通过悬停提示查看。"
   ]
 }
