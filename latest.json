@@ -1,17 +1,18 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.4",
-  "published_at": "2026-07-16",
-  "installer_name": "TC16-v3.2.4-20260716-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.4/TC16-v3.2.4-20260716-Setup.exe",
-  "size": 170322918,
-  "sha256": "9b28ba39965cafcf1aa18aa7488878bcfb13ae12c289f439a9a3aa7e61fbdf39",
+  "version": "3.2.5",
+  "published_at": "2026-07-17",
+  "installer_name": "TC16-v3.2.5-20260717-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.5/TC16-v3.2.5-20260717-Setup.exe",
+  "size": 170334758,
+  "sha256": "fd46116898c39d0021a3d08a5b71390f22f5aba90dda7154ea7dfcf43026fcd2",
   "mandatory": false,
   "release_notes": [
-    "使用 Windows 原生进程状态查询，修复主程序退出后更新器可能在安装前结束的问题。",
-    "完成 v3.2.3 到 v3.2.4 的自动更新链路验证。",
-    "v3.2.2 及更早版本请从下载页面手动安装最新版，无需先卸载旧版。",
-    "v3.2.3 及后续版本可继续使用软件内更新。"
+    "修复自定义安装路径下软件内更新无法继续的问题。",
+    "更新器根据当前运行的 `TC16.exe` 确定真实安装目录，不再固定使用默认 C 盘目录。",
+    "增加安装目标安全校验，拒绝磁盘根目录、系统根目录和 TC16 用户数据目录。",
+    "自定义路径中的 v3.2.3 或 v3.2.4 需要手动覆盖安装一次 v3.2.5，无需先卸载。",
+    "从 v3.2.5 起，默认目录和自定义目录均可继续使用软件内更新。"
   ]
 }
