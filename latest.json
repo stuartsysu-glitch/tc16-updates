@@ -1,18 +1,17 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "published_at": "2026-07-17",
-  "installer_name": "TC16-v3.2.5-20260717-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.5/TC16-v3.2.5-20260717-Setup.exe",
-  "size": 170334758,
-  "sha256": "fd46116898c39d0021a3d08a5b71390f22f5aba90dda7154ea7dfcf43026fcd2",
+  "installer_name": "TC16-v3.2.6-20260717-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.6/TC16-v3.2.6-20260717-Setup.exe",
+  "size": 170349733,
+  "sha256": "4e0c25e5ed1bef981f30d18208b09264bbba6881566492cf0bc8b76973b86b03",
   "mandatory": false,
   "release_notes": [
-    "修复自定义安装路径下软件内更新无法继续的问题。",
-    "更新器根据当前运行的 `TC16.exe` 确定真实安装目录，不再固定使用默认 C 盘目录。",
-    "增加安装目标安全校验，拒绝磁盘根目录、系统根目录和 TC16 用户数据目录。",
-    "自定义路径中的 v3.2.3 或 v3.2.4 需要手动覆盖安装一次 v3.2.5，无需先卸载。",
-    "从 v3.2.5 起，默认目录和自定义目录均可继续使用软件内更新。"
+    "用于验证 v3.2.5 在自定义安装路径中的后续自动更新能力。",
+    "本版本不增加无关功能，仅递增版本和发布资料。",
+    "自定义路径中的 v3.2.4 及更早版本请手动覆盖安装最新版，无需先卸载。",
+    "v3.2.5 及后续版本可在默认目录或自定义目录继续使用软件内更新。"
   ]
 }
