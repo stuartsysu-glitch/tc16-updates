@@ -1,10 +1,10 @@
 # TC16 软件更新与下载 / Software Updates and Downloads
 
-TC16 是极低温控温仪的 Windows 控制软件。本仓库用于提供软件下载页面、在线更新清单和历史版本。
+TC16 是极低温控温仪的 Windows 控制软件。本仓库提供软件下载页面、在线更新清单和当前公开版本的 Windows 安装程序。
 
-TC16 is the Windows control software for the cryogenic temperature controller. This repository hosts the download page, update manifest, and previous releases.
+TC16 is the Windows control software for the cryogenic temperature controller. This repository provides the download page, online update manifest, and Windows installers for the currently published versions.
 
-[软件下载 / Download](https://stuartsysu-glitch.github.io/tc16-updates/) | [历史版本 / Previous releases](https://github.com/stuartsysu-glitch/tc16-updates/releases)
+[软件下载 / Download](https://stuartsysu-glitch.github.io/tc16-updates/) | [版本发布 / Releases](https://github.com/stuartsysu-glitch/tc16-updates/releases)
 
 ## 中文
 
@@ -19,13 +19,13 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 
 - `v3.2.2` 及更早版本：请从下载页面获取最新版并覆盖安装，无需先卸载旧版。
 - `v3.2.3-v3.2.4`：默认安装目录可直接使用软件内更新；自定义安装目录请手动覆盖安装最新版。
-- `v3.2.5` 及后续版本：默认目录和自定义目录均可在 TC16 右下角点击“更新”完成后续升级。
+- `v3.2.5` 及后续版本：默认目录和自定义目录均可在 TC16 右下角点击“更新”完成升级。
 
 ### 仓库内容
 
 - `index.html`：软件下载页面。
 - `latest.json`：TC16 软件读取的在线更新清单。
-- GitHub Releases：保存各版本的 Windows 安装程序。
+- GitHub Releases：提供当前公开版本的 Windows 安装程序。
 
 ### 文件校验
 
@@ -50,7 +50,7 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 
 - `index.html`: software download page.
 - `latest.json`: online update manifest used by TC16.
-- GitHub Releases: Windows installers for published versions.
+- GitHub Releases: Windows installers for the currently published versions.
 
 ### File integrity
 
