@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.7",
-  "published_at": "2026-07-17",
-  "installer_name": "TC16-v3.2.7-20260717-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.7/TC16-v3.2.7-20260717-Setup.exe",
-  "size": 170315054,
-  "sha256": "d7b55082e5d35815f83d0c6b0fda8de3d5accd905d2f3ec57117c521d932635e",
+  "version": "3.2.8",
+  "published_at": "2026-07-18",
+  "installer_name": "TC16-v3.2.8-20260718-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.8/TC16-v3.2.8-20260718-Setup.exe",
+  "size": 161974248,
+  "sha256": "b155915d2aeb0e6675d2b819f897d57558d4f4b1c4e3ec721b6f24027ae7e0eb",
   "mandatory": false,
   "release_notes": [
-    "修复高级页面日志路径过长时左右布局比例失衡的问题。",
-    "高级页面底部“前端增益状态”和“操作日志/更新”保持 1:1 布局。",
-    "完整日志路径仍可选择，并可通过悬停提示查看。"
+    "修复 UART 查找在不同波特率探测后因串口残留字节而漏报 COM 设备的问题。",
+    "限制串口单次响应的总读取超时，避免错误波特率下搜索过程卡住。",
+    "UART 查找优先尝试 9600，同时保留与固件一致的完整波特率和校验位选项。"
   ]
 }
