@@ -1,16 +1,17 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.8",
+  "version": "3.2.9",
   "published_at": "2026-07-18",
-  "installer_name": "TC16-v3.2.8-20260718-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.8/TC16-v3.2.8-20260718-Setup.exe",
-  "size": 161974248,
-  "sha256": "b155915d2aeb0e6675d2b819f897d57558d4f4b1c4e3ec721b6f24027ae7e0eb",
+  "installer_name": "TC16-v3.2.9-20260718-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.9/TC16-v3.2.9-20260718-Setup.exe",
+  "size": 170343496,
+  "sha256": "07c115208ce33485bb1d7a54044f8894af863faf71db761edb8f73671e5dbac5",
   "mandatory": false,
   "release_notes": [
-    "修复 UART 查找在不同波特率探测后因串口残留字节而漏报 COM 设备的问题。",
-    "限制串口单次响应的总读取超时，避免错误波特率下搜索过程卡住。",
-    "UART 查找优先尝试 9600，同时保留与固件一致的完整波特率和校验位选项。"
+    "UART 仅保留 115200 和 921600 两档波特率，缩短设备搜索时间。",
+    "UART 连接下允许修改并读回网络配置，ETH 连接下继续保持网络配置只读。",
+    "调整高级设置页面布局，将“应用网络”移动到网关右侧并上移 UART 设置区域。",
+    "修复安装包漏带 `TC16Updater.exe` 和 `TC16.exe` Windows 版本资源的问题。"
   ]
 }
