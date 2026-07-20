@@ -1,17 +1,18 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.9",
-  "published_at": "2026-07-18",
-  "installer_name": "TC16-v3.2.9-20260718-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.9/TC16-v3.2.9-20260718-Setup.exe",
-  "size": 170343496,
-  "sha256": "07c115208ce33485bb1d7a54044f8894af863faf71db761edb8f73671e5dbac5",
+  "version": "3.2.10",
+  "published_at": "2026-07-20",
+  "installer_name": "TC16-v3.2.10-20260720-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.10/TC16-v3.2.10-20260720-Setup.exe",
+  "size": 170342483,
+  "sha256": "20688775a20397348115e004348bc0e8edd4a7a69e0d12c222d54836b94c61b4",
   "mandatory": false,
   "release_notes": [
-    "UART 仅保留 115200 和 921600 两档波特率，缩短设备搜索时间。",
-    "UART 连接下允许修改并读回网络配置，ETH 连接下继续保持网络配置只读。",
-    "调整高级设置页面布局，将“应用网络”移动到网关右侧并上移 UART 设置区域。",
-    "修复安装包漏带 `TC16Updater.exe` 和 `TC16.exe` Windows 版本资源的问题。"
+    "修复部分 USB-RS232 转换器因逐字节重设超时而无法识别 UART 的问题。",
+    "串口打开后增加稳定等待，避免转换器刚初始化时首条识别指令异常。",
+    "年份批次附加查询失败时保留已确认设备，并继续使用上位机 `2601` 显示默认值。",
+    "在 Prolific `067B:2303` 的 COM7 上确认 `115200 8N1` 自动发现成功。",
+    "同一台仪器同时连接 USB 与 UART 时，设备列表分别显示 `（USB）TC260122` 和 `（UART）TC260122`。"
   ]
 }
