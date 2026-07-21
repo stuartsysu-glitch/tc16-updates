@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "product": "TC16",
+  "curve_bundle": {
+    "name": "TC16-Curve-Templates-and-Examples-v1.0.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.0/TC16-Curve-Templates-and-Examples-v1.0.zip",
+    "size": 262073,
+    "sha256": "6f8e4b27428377e4dedd22195953f6a1553aa5cc9dd2e169ad90f14c0f066d7c",
+    "version": "1.0"
+  },
+  "curve_guide": {
+    "name": "TC16-Curve-Import-Guide-v1.0.pdf",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.0/TC16-Curve-Import-Guide-v1.0.pdf",
+    "size": 270745,
+    "sha256": "9c4ec41e6e47ea1503c844946c2e47482645722bed4fea16dd1221150bbb61e7"
+  },
+  "firmware": {
+    "name": "BOOT_SW3.3.31_HW3.0.6_PCBA3.1.3.bin",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.31/BOOT_SW3.3.31_HW3.0.6_PCBA3.1.3.bin",
+    "size": 6821520,
+    "sha256": "39acfc40aec7a8142643540b9b76f8714ebda27811d09cdd65b973582b7653ae",
+    "version": "3.3.31",
+    "hardware": "3.0.6",
+    "pcba": "3.1.3"
+  },
+  "firmware_guide": {
+    "name": "TC16-Firmware-Upgrade-Guide-v1.0.pdf",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.31/TC16-Firmware-Upgrade-Guide-v1.0.pdf",
+    "size": 276545,
+    "sha256": "6a77c69eadfeb5372a2ff1ce599f96bf4821e55270036421dc68b5aa29074fff"
+  },
+  "firmware_history_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases"
+}

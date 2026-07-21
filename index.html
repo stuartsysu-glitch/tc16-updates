@@ -85,6 +85,13 @@
     .header-link:hover,
     .header-link:focus-visible { color: var(--accent); }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-shrink: 0;
+    }
+
     .release-band {
       background: var(--surface);
       border-bottom: 1px solid var(--line);
@@ -262,6 +269,129 @@
       background: var(--surface);
     }
 
+    .section-hint {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .resource-item {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 22px;
+    }
+
+    .resource-type {
+      margin: 0 0 4px;
+      color: var(--success);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .resource-item h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .resource-heading-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .resource-heading-row h3 { min-width: 0; }
+
+    .resource-description,
+    .resource-compatibility {
+      min-height: 52px;
+      margin: 10px 0 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resource-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .resource-button {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 15px;
+      border: 1px solid #59636f;
+      border-radius: 6px;
+      background: var(--white);
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .resource-button:hover,
+    .resource-button:focus-visible {
+      border-color: var(--ink);
+      background: var(--surface);
+    }
+
+    .resource-button[aria-disabled="true"],
+    .resource-guide[aria-disabled="true"],
+    .resource-history[aria-disabled="true"] {
+      pointer-events: none;
+      color: #98a2ad;
+    }
+
+    .resource-button[aria-disabled="true"] {
+      border-color: var(--line);
+      background: var(--surface);
+    }
+
+    .resource-guide,
+    .resource-history {
+      color: var(--muted);
+      font-size: 14px;
+      text-underline-offset: 3px;
+    }
+
+    .resource-history {
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .resource-meta {
+      min-height: 42px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .resource-warning {
+      margin: 18px 0 0;
+      padding: 13px 15px;
+      border-left: 3px solid var(--accent);
+      background: #fff6f6;
+      color: #7a2027;
+      font-size: 14px;
+    }
+
+    #resource-status { text-align: left; }
+
     footer {
       padding-block: 28px 40px;
       color: var(--muted);
@@ -291,6 +421,10 @@
       h1 { font-size: 31px; }
       .download-panel { padding: 20px; }
       .section-grid { grid-template-columns: 1fr; gap: 18px; }
+      .header-actions { gap: 14px; }
+      .release-header-link { display: none; }
+      .companion-header-link { display: inline; }
+      .resource-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 390px) {
@@ -309,7 +443,10 @@
           <p class="brand-subtitle">极低温控温仪控制平台</p>
         </div>
       </div>
-      <a class="header-link" href="https://github.com/stuartsysu-glitch/tc16-updates/releases">查看全部版本</a>
+      <nav class="header-actions" aria-label="下载导航">
+        <a class="header-link companion-header-link" href="#companion-downloads">配套下载</a>
+        <a class="header-link release-header-link" href="https://github.com/stuartsysu-glitch/tc16-updates/releases">查看全部版本</a>
+      </nav>
     </div>
   </header>
 
@@ -366,6 +503,45 @@
       </div>
     </section>
 
+    <section id="companion-downloads">
+      <div class="shell section-grid">
+        <div>
+          <h2>配套下载</h2>
+          <p class="section-hint">曲线文件与设备固件</p>
+        </div>
+        <div>
+          <div class="resource-grid">
+            <article class="resource-item">
+              <p class="resource-type">曲线文件</p>
+              <h3>曲线模板与示例</h3>
+              <p class="resource-description">4 种格式模板，包含 CMN、PT100、RuOx、Cernox 和 TSH 示例。</p>
+              <div class="resource-actions">
+                <a id="curve-download-link" class="resource-button" aria-disabled="true">下载曲线包</a>
+                <a id="curve-guide-link" class="resource-guide" aria-disabled="true">图文教程 PDF</a>
+              </div>
+              <p id="curve-resource-meta" class="resource-meta">正在读取资源信息…</p>
+            </article>
+
+            <article class="resource-item">
+              <p class="resource-type">设备固件</p>
+              <div class="resource-heading-row">
+                <h3 id="firmware-title">最新固件</h3>
+                <a id="firmware-history-link" class="resource-history" aria-disabled="true">查看历史固件</a>
+              </div>
+              <p id="firmware-compatibility" class="resource-compatibility">正在读取兼容硬件信息…</p>
+              <div class="resource-actions">
+                <a id="firmware-download-link" class="resource-button" aria-disabled="true">下载最新版 BIN</a>
+                <a id="firmware-guide-link" class="resource-guide" aria-disabled="true">图文教程 PDF</a>
+              </div>
+              <p id="firmware-resource-meta" class="resource-meta">正在读取资源信息…</p>
+            </article>
+          </div>
+          <p class="resource-warning"><strong>使用前请确认：</strong>示例曲线不能替代实际标定数据；固件升级前必须核对 HW 与 PCBA 版本，并保持设备供电和当前通讯连接稳定。</p>
+          <p id="resource-status" class="page-status" role="status" aria-live="polite">正在读取配套资源…</p>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="shell section-grid">
         <h2>当前版本说明</h2>
@@ -391,7 +567,7 @@
   <footer>
     <div class="shell footer-inner">
       <span>国盾量子 QuantumCTek · TC16</span>
-      <span>更新元数据：<a href="latest.json">latest.json</a></span>
+      <span>更新元数据：<a href="latest.json">latest.json</a> · <a href="resources.json">resources.json</a></span>
     </div>
   </footer>
 
@@ -405,6 +581,16 @@
     const downloadLink = document.getElementById("download-link");
     const releaseNotes = document.getElementById("release-notes");
     const pageStatus = document.getElementById("page-status");
+    const curveDownloadLink = document.getElementById("curve-download-link");
+    const curveGuideLink = document.getElementById("curve-guide-link");
+    const curveResourceMeta = document.getElementById("curve-resource-meta");
+    const firmwareTitle = document.getElementById("firmware-title");
+    const firmwareCompatibility = document.getElementById("firmware-compatibility");
+    const firmwareDownloadLink = document.getElementById("firmware-download-link");
+    const firmwareGuideLink = document.getElementById("firmware-guide-link");
+    const firmwareHistoryLink = document.getElementById("firmware-history-link");
+    const firmwareResourceMeta = document.getElementById("firmware-resource-meta");
+    const resourceStatus = document.getElementById("resource-status");
 
     function formatMiB(bytes) {
       return `${(Number(bytes) / 1024 / 1024).toFixed(2)} MiB`;
@@ -418,6 +604,43 @@
       if (!Array.isArray(manifest.release_notes)) {
         throw new Error("修改记录格式无效");
       }
+    }
+
+    function validateResourceAsset(item, label) {
+      const required = ["name", "url", "size", "sha256"];
+      if (!item || required.some((key) => !item[key])) {
+        throw new Error(`${label}信息不完整`);
+      }
+      if (!item.url.startsWith(`${releasesUrl}/download/`)) {
+        throw new Error(`${label}下载地址无效`);
+      }
+      if (!Number.isFinite(Number(item.size)) || Number(item.size) <= 0) {
+        throw new Error(`${label}文件大小无效`);
+      }
+      if (!/^[0-9a-f]{64}$/i.test(item.sha256)) {
+        throw new Error(`${label}校验值无效`);
+      }
+    }
+
+    function validateResources(resources) {
+      if (resources.schema_version !== 1 || resources.product !== "TC16") {
+        throw new Error("配套资源清单格式无效");
+      }
+      validateResourceAsset(resources.curve_bundle, "曲线包");
+      validateResourceAsset(resources.curve_guide, "曲线教程");
+      validateResourceAsset(resources.firmware, "固件");
+      validateResourceAsset(resources.firmware_guide, "固件教程");
+      if (!resources.firmware.version || !resources.firmware.hardware || !resources.firmware.pcba) {
+        throw new Error("固件版本信息不完整");
+      }
+      if (typeof resources.firmware_history_url !== "string" || !resources.firmware_history_url.startsWith(releasesUrl)) {
+        throw new Error("固件历史地址无效");
+      }
+    }
+
+    function enableResourceLink(link, url) {
+      link.href = url;
+      link.removeAttribute("aria-disabled");
     }
 
     fetch("latest.json", { cache: "no-store" })
@@ -448,6 +671,30 @@
         downloadLink.querySelector("span:last-child").textContent = "前往 GitHub Releases";
         pageStatus.textContent = `无法读取最新版本：${error.message}`;
         pageStatus.classList.add("error");
+      });
+
+    fetch("resources.json", { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((resources) => {
+        validateResources(resources);
+        enableResourceLink(curveDownloadLink, resources.curve_bundle.url);
+        enableResourceLink(curveGuideLink, resources.curve_guide.url);
+        curveResourceMeta.textContent = `${resources.curve_bundle.name} · ${formatMiB(resources.curve_bundle.size)}`;
+
+        firmwareTitle.textContent = `最新固件 SW ${resources.firmware.version}`;
+        firmwareCompatibility.textContent = `适用 HW ${resources.firmware.hardware} / PCBA ${resources.firmware.pcba}`;
+        enableResourceLink(firmwareDownloadLink, resources.firmware.url);
+        enableResourceLink(firmwareGuideLink, resources.firmware_guide.url);
+        enableResourceLink(firmwareHistoryLink, resources.firmware_history_url);
+        firmwareResourceMeta.textContent = `${resources.firmware.name} · ${formatMiB(resources.firmware.size)}`;
+        resourceStatus.textContent = "已加载配套资源";
+      })
+      .catch((error) => {
+        resourceStatus.textContent = `无法读取配套资源：${error.message}`;
+        resourceStatus.classList.add("error");
       });
   </script>
 </body>
