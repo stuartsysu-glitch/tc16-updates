@@ -24,10 +24,10 @@
     "pcba": "3.1.3"
   },
   "firmware_guide": {
-    "name": "【1】旧固件迁移至新固件图文教程_GoldenA.pdf",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/1._GoldenA.pdf",
-    "size": 397292,
-    "sha256": "3191f5e988644dd22559b4f697b6f3f562ee1c7878f0e693a7727bb771fe7dc0"
+    "name": "TC16-SW3.3.32-AB1-Upgrade-Guides.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/TC16-SW3.3.32-AB1-Upgrade-Guides.zip",
+    "size": 664800,
+    "sha256": "295a710941cffcaa11e389628a1fc4148999f6bb13c3cdce2cd3d2b2aa0f3be9"
   },
   "firmware_history_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases"
 }
