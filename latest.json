@@ -1,18 +1,18 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.10",
-  "published_at": "2026-07-20",
-  "installer_name": "TC16-v3.2.10-20260720-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.10/TC16-v3.2.10-20260720-Setup.exe",
-  "size": 170342483,
-  "sha256": "20688775a20397348115e004348bc0e8edd4a7a69e0d12c222d54836b94c61b4",
+  "version": "3.2.11",
+  "published_at": "2026-07-24",
+  "installer_name": "TC16-v3.2.11-20260724-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/TC16-v3.2.11-20260724-Setup.exe",
+  "size": 170350981,
+  "sha256": "95682d6ee73aba98555005bd5b5a9295c7eb7ba5a0713265fa579a3a25ed2537",
   "mandatory": false,
   "release_notes": [
-    "修复部分 USB-RS232 转换器因逐字节重设超时而无法识别 UART 的问题。",
-    "串口打开后增加稳定等待，避免转换器刚初始化时首条识别指令异常。",
-    "年份批次附加查询失败时保留已确认设备，并继续使用上位机 `2601` 显示默认值。",
-    "在 Prolific `067B:2303` 的 COM7 上确认 `115200 8N1` 自动发现成功。",
-    "同一台仪器同时连接 USB 与 UART 时，设备列表分别显示 `（USB）TC260122` 和 `（UART）TC260122`。"
+    "自动探测设备是否支持 AB1，不再根据序列号推测 FSBL 或 Flash 布局。",
+    "AB1 设备使用独立 `ABUP` 协议，并在发送前校验 `UPDATE_B` manifest、长度、CRC32 和 SHA-256。",
+    "无法解析设备固件版本时在写 Flash 前停止，避免盲目选择不兼容的固化协议。",
+    "识别 `UPDATER_TOO_OLD`、`BAD_PACKAGE` 和 `PACKAGE_INCOMPATIBLE`，明确提示先升级 TC16 或更换固件包。",
+    "SW 3.3.25 之前继续使用旧固化协议；SW 3.3.25 及以后不支持 AB1 时继续使用原结构化协议。"
   ]
 }
