@@ -15,19 +15,19 @@
     "sha256": "4ec2e1e1fda8c5883e92e74f00a02b5d136c54a8b52e212605916db2c29d52e2"
   },
   "firmware": {
-    "name": "BOOT_SW3.3.31_HW3.0.6_PCBA3.1.3.bin",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.31/BOOT_SW3.3.31_HW3.0.6_PCBA3.1.3.bin",
-    "size": 6821520,
-    "sha256": "39acfc40aec7a8142643540b9b76f8714ebda27811d09cdd65b973582b7653ae",
-    "version": "3.3.31",
+    "name": "TC16-SW3.3.32-AB1-Firmware-Pack.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/TC16-SW3.3.32-AB1-Firmware-Pack.zip",
+    "size": 3061871,
+    "sha256": "5b4ebbecc2c1e90be070e992ab883b505e8bbf3ab353cbdec7f9bdd816c3283f",
+    "version": "3.3.32",
     "hardware": "3.0.6",
     "pcba": "3.1.3"
   },
   "firmware_guide": {
-    "name": "TC16-Firmware-Upgrade-Guide-v1.0.pdf",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.31/TC16-Firmware-Upgrade-Guide-v1.0.pdf",
-    "size": 276545,
-    "sha256": "6a77c69eadfeb5372a2ff1ce599f96bf4821e55270036421dc68b5aa29074fff"
+    "name": "【1】旧固件迁移至新固件图文教程_GoldenA.pdf",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/【1】旧固件迁移至新固件图文教程_GoldenA.pdf",
+    "size": 397292,
+    "sha256": "3191f5e988644dd22559b4f697b6f3f562ee1c7878f0e693a7727bb771fe7dc0"
   },
   "firmware_history_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases"
 }
