@@ -15,11 +15,11 @@
     "sha256": "4ec2e1e1fda8c5883e92e74f00a02b5d136c54a8b52e212605916db2c29d52e2"
   },
   "firmware": {
-    "name": "TC16-SW3.3.32-AB1-Firmware-Pack.zip",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.11/TC16-SW3.3.32-AB1-Firmware-Pack.zip",
-    "size": 3061871,
-    "sha256": "5b4ebbecc2c1e90be070e992ab883b505e8bbf3ab353cbdec7f9bdd816c3283f",
-    "version": "3.3.32",
+    "name": "TC16-SW3.3.34-AB1-Firmware-Pack.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.34/TC16-SW3.3.34-AB1-Firmware-Pack.zip",
+    "size": 3077451,
+    "sha256": "28274d99d88584446b0fb1f3c120d3af4e1d2a8563723c92fe4c06262e5f7fb9",
+    "version": "3.3.34",
     "hardware": "3.0.6",
     "pcba": "3.1.3"
   },
