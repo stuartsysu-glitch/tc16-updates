@@ -1,19 +1,17 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.12",
-  "published_at": "2026-08-03",
-  "installer_name": "TC16-v3.2.12-20260803-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.12/TC16-v3.2.12-20260803-Setup.exe",
-  "size": 58829917,
-  "sha256": "c0cb9c9a4eb09eaa6cf7ef28813401caaf4a0f60f2af0169b03d020ffe21f650",
+  "version": "3.2.13",
+  "published_at": "2026-08-06",
+  "installer_name": "TC16-v3.2.13-20260806-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.13/TC16-v3.2.13-20260806-Setup.exe",
+  "size": 58837192,
+  "sha256": "f0ac2c12cb11cc32b55ac62ac7d519ade15feafe18bc5ede2f229cee0bda087c",
   "mandatory": false,
   "release_notes": [
-    "合并 PID 自整定功能与 AB1 固化支持，PID 自整定要求设备固件版本为 3.3.33 或更高。",
-    "加热器电流/电压支持 A、mA、uA 和 V、mV、uV 单位切换。",
-    "温度曲线支持按鼠标位置缩放、保留点数滑杆和原始数据导出。",
-    "修复加热器输入超出硬件上限时回退为 0 的问题，改为钳位到对应硬件上限。",
-    "修复 HSA/HSB 自整定期间采样电阻保护通道错误。",
-    "保留曲线格式 3、5、7 的导入和设备曲线标准格式导出能力。"
+    "PID 自整定弹窗增加“高级”诊断按钮，悬停可查看设备实时诊断信息，点击可展开详细诊断面板。",
+    "支持显示基线漂移、测温噪声、稳定窗口、温升和响应信噪比等自整定诊断数据。",
+    "严格校验 PID 自整定诊断数据，避免旧诊断或格式异常数据覆盖当前运行状态。",
+    "高级诊断查询失败时不影响 PID 自整定主流程。"
   ]
 }
