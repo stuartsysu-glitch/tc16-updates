@@ -275,6 +275,30 @@
       font-size: 14px;
     }
 
+    .tutorial-overview {
+      min-height: 132px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 4px 0;
+    }
+
+    .tutorial-overview h3 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .tutorial-description {
+      max-width: 610px;
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tutorial-button { flex: 0 0 auto; }
+
     .resource-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -426,6 +450,12 @@
       .companion-header-link,
       .tutorial-header-link { display: inline; }
       .resource-grid { grid-template-columns: 1fr; }
+      .tutorial-overview {
+        min-height: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+      }
     }
 
     @media (max-width: 390px) {
@@ -445,7 +475,7 @@
         </div>
       </div>
       <nav class="header-actions" aria-label="下载导航">
-        <a class="header-link tutorial-header-link" href="tutorials.html">教学视频</a>
+        <a class="header-link tutorial-header-link" href="#tutorial-videos">教学视频</a>
         <a class="header-link companion-header-link" href="#companion-downloads">配套下载</a>
         <a class="header-link release-header-link" href="https://github.com/stuartsysu-glitch/tc16-updates/releases">查看全部版本</a>
       </nav>
@@ -501,6 +531,22 @@
           <p><strong>v3.2.2 及更早版本：</strong>请从本页面下载最新版并覆盖安装，无需先卸载。</p>
           <p><strong>v3.2.3-v3.2.4：</strong>默认目录可直接更新；自定义安装目录请手动覆盖安装最新版。</p>
           <p><strong>v3.2.5 及后续版本：</strong>默认目录和自定义目录均可在 TC16 右下角点击“更新”。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutorial-videos">
+      <div class="shell section-grid">
+        <div>
+          <h2>教学视频</h2>
+          <p class="section-hint">软件与设备操作教程</p>
+        </div>
+        <div class="tutorial-overview">
+          <div>
+            <h3>TC16 操作指南</h3>
+            <p class="tutorial-description">共 10 个视频，包含软件连接、曲线导入、测温、加热器、示波器、PID 自整定、PID 控温以及软件和固件更新。</p>
+          </div>
+          <a class="resource-button tutorial-button" href="tutorials.html">查看全部视频</a>
         </div>
       </div>
     </section>
