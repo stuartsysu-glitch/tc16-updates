@@ -6,6 +6,8 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 
 [软件下载 / Download](https://stuartsysu-glitch.github.io/tc16-updates/) | [版本发布 / Releases](https://github.com/stuartsysu-glitch/tc16-updates/releases)
 
+[教学视频 / Video Tutorials](https://stuartsysu-glitch.github.io/tc16-updates/tutorials.html)
+
 ## 中文
 
 ### 下载与安装
@@ -24,6 +26,8 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 ### 仓库内容
 
 - `index.html`：软件下载页面。
+- `tutorials.html`：TC16 控制软件与设备操作教学视频页面。
+- `assets/videos/`：教学视频 MP4 静态资源，文件名保持 ASCII 格式。
 - `latest.json`：仅供 TC16 软件自动更新使用的 Windows 安装程序清单。
 - `resources.json`：网站读取的曲线包、教程和设备固件清单，不参与软件自动更新。
 - GitHub Releases：提供 Windows 安装程序、曲线资源、PDF 教程和设备固件。
@@ -57,6 +61,8 @@ TC16 is the Windows control software for the cryogenic temperature controller. T
 ### Repository contents
 
 - `index.html`: software download page.
+- `tutorials.html`: video tutorials for the TC16 control software and device operations.
+- `assets/videos/`: MP4 tutorial assets with ASCII filenames.
 - `latest.json`: Windows installer manifest used exclusively by the TC16 in-app updater.
 - `resources.json`: website manifest for curve files, guides, and device firmware. It is independent of software updates.
 - GitHub Releases: Windows installers, curve resources, PDF guides, and device firmware.
@@ -81,6 +87,7 @@ The download page displays the installer SHA-256 value for optional integrity ve
 - 固件 Release 标签使用 `firmware-sw<SW版本>`，当前源文件目录为 `D:\GD_COM\GD_boot_bin\backup`。
 - 曲线 ZIP、独立曲线教程 PDF、固件 BIN 和独立固件教程 PDF 发布后，使用真实文件大小和 SHA-256 重新生成 `resources.json`。
 - 更新固件时必须同步核对教程中的兼容 HW、PCBA 和软件界面；升级教程不得限定为单一通讯接口。
+- 教学视频使用 MP4（H.264/AAC）格式，单个文件不得超过 GitHub 的 100 MB 限制；页面播放器使用 `preload="metadata"`。
 
 For every new release, review the download links, system requirements, and update instructions in this README. Update them when the user-facing information changes, and avoid hard-coding the latest version number or installer filename.
 

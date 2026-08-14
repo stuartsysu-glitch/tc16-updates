@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TC16 极低温控温仪控制软件与设备操作教学视频。">
+  <title>TC16 教学视频</title>
+  <link rel="icon" href="logo_mark.png">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1d2228;
+      --muted: #66717d;
+      --line: #d7dce1;
+      --surface: #f4f6f7;
+      --accent: #c9212d;
+      --success: #157454;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--white);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .header-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .brand-subtitle {
+      margin: 1px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .header-link {
+      color: var(--muted);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .header-link:hover,
+    .header-link:focus-visible { color: var(--accent); }
+
+    .page-heading {
+      padding-block: 44px 34px;
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--success);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 1.3;
+    }
+
+    .heading-copy {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    main { padding-block: 38px 52px; }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .video-item {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .video-frame {
+      aspect-ratio: 16 / 9;
+      background: #111820;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .video-title {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0;
+      padding: 15px 17px 17px;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .video-number {
+      flex: 0 0 auto;
+      color: var(--success);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding-block: 28px 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 28px, 1080px); }
+      .header-inner { min-height: 76px; }
+      .brand img { width: 48px; height: 48px; }
+      .brand-name { font-size: 21px; }
+      .brand-subtitle { display: none; }
+      .page-heading { padding-block: 34px 28px; }
+      h1 { font-size: 30px; }
+      main { padding-block: 28px 40px; }
+      .video-grid { grid-template-columns: 1fr; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="返回 TC16 软件更新首页">
+        <img src="logo_mark.png" alt="国盾量子标志">
+        <div>
+          <p class="brand-name">TC16</p>
+          <p class="brand-subtitle">极低温控温仪控制平台</p>
+        </div>
+      </a>
+      <a class="header-link" href="index.html">软件与固件下载</a>
+    </div>
+  </header>
+
+  <section class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">操作指南</p>
+      <h1>TC16 教学视频</h1>
+      <p class="heading-copy">控制软件、测温、加热、PID 与设备升级教程。</p>
+    </div>
+  </section>
+
+  <main class="shell">
+    <div class="video-grid">
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/01-software-start-connect.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">01</span>软件启动与连接</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/02-curve-import.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">02</span>温度曲线导入</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/03-temperature-measurement.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">03</span>测温设置与测量</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/04-history-curve-export.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">04</span>历史曲线导出</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/05-heater-open-loop.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">05</span>加热器开环使用</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/06-oscilloscope-mode.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">06</span>示波器模式</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/07-pid-autotune.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">07</span>PID 参数自整定教程</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/08-pid-control.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">08</span>PID 控温教程</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/09-control-software-update.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">09</span>控制软件更新</h2>
+      </article>
+      <article class="video-item">
+        <div class="video-frame"><video controls preload="metadata" playsinline src="assets/videos/10-firmware-update.mp4"></video></div>
+        <h2 class="video-title"><span class="video-number">10</span>控温仪固件更新</h2>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>国盾量子 QuantumCTek · TC16</span>
+      <a href="index.html">返回软件下载</a>
+    </div>
+  </footer>
+</body>
+</html>
