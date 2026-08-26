@@ -2,24 +2,24 @@
   "schema_version": 1,
   "product": "TC16",
   "curve_bundle": {
-    "name": "TC16-Curve-Templates-and-Examples-v1.1.zip",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.1/TC16-Curve-Templates-and-Examples-v1.1.zip",
-    "size": 269270,
-    "sha256": "26c9392c39107bef63e5216d5b5c2697a4a4fb19606c4f3c27e00b933c961644",
-    "version": "1.1"
+    "name": "TC16-Curve-Templates-and-Examples-v1.2.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.2/TC16-Curve-Templates-and-Examples-v1.2.zip",
+    "size": 269589,
+    "sha256": "7b8726c4a93ee266a3fbf4f9f521a2faa2bea68d5274b795c49bca4e6978b7d0",
+    "version": "1.2"
   },
   "curve_guide": {
-    "name": "TC16-Curve-Import-Guide-v1.1.pdf",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.1/TC16-Curve-Import-Guide-v1.1.pdf",
-    "size": 278094,
-    "sha256": "4ec2e1e1fda8c5883e92e74f00a02b5d136c54a8b52e212605916db2c29d52e2"
+    "name": "TC16-Curve-Import-Guide-v1.2.pdf",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/curves-v1.2/TC16-Curve-Import-Guide-v1.2.pdf",
+    "size": 278462,
+    "sha256": "866c3b2bbd288143a399ff2d5a1327841be8c8af856c7232a918395b8ee535f0"
   },
   "firmware": {
-    "name": "TC16-SW3.3.34-AB1-Firmware-Pack.zip",
-    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.34/TC16-SW3.3.34-AB1-Firmware-Pack.zip",
-    "size": 3077451,
-    "sha256": "28274d99d88584446b0fb1f3c120d3af4e1d2a8563723c92fe4c06262e5f7fb9",
-    "version": "3.3.34",
+    "name": "TC16-SW3.3.35-AB1-Firmware-Pack.zip",
+    "url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/firmware-sw3.3.35/TC16-SW3.3.35-AB1-Firmware-Pack.zip",
+    "size": 3105879,
+    "sha256": "d463633acb9d365d6092448786e18cb42ecee77ea775b9fa8172b6f5c55788f0",
+    "version": "3.3.35",
     "hardware": "3.0.6",
     "pcba": "3.1.3"
   },
