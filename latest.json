@@ -1,17 +1,18 @@
 {
   "schema_version": 2,
   "product": "TC16",
-  "version": "3.2.13",
-  "published_at": "2026-08-06",
-  "installer_name": "TC16-v3.2.13-20260806-Setup.exe",
-  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.13/TC16-v3.2.13-20260806-Setup.exe",
-  "size": 58837192,
-  "sha256": "f0ac2c12cb11cc32b55ac62ac7d519ade15feafe18bc5ede2f229cee0bda087c",
+  "version": "3.2.14",
+  "published_at": "2026-09-28",
+  "installer_name": "TC16-v3.2.14-20260928-Setup.exe",
+  "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.14/TC16-v3.2.14-20260928-Setup.exe",
+  "size": 171695055,
+  "sha256": "371ea50c69c91569cc58ee182d4c7550f543a890dc9caf5f9963bd748ef76905",
   "mandatory": false,
   "release_notes": [
-    "PID 自整定弹窗增加“高级”诊断按钮，悬停可查看设备实时诊断信息，点击可展开详细诊断面板。",
-    "支持显示基线漂移、测温噪声、稳定窗口、温升和响应信噪比等自整定诊断数据。",
-    "严格校验 PID 自整定诊断数据，避免旧诊断或格式异常数据覆盖当前运行状态。",
-    "高级诊断查询失败时不影响 PID 自整定主流程。"
+    "增加“设置”页面，集中放置更新入口和控温诊断记录功能。",
+    "增加加热器保护与参数校验，检查限流、限压参数。",
+    "优化温度曲线与 FFT 操作，曲线选点可查看阻抗、温度、互感和功率。",
+    "增加设备曲线删除功能，优化设置和参数应用流程。",
+    "修复单通道再次开启 PID 时可能等待增益超时的问题，兼容 SW3.3.37 及后续固件的增益状态流程。"
   ]
 }
