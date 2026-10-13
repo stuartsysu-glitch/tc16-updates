@@ -485,7 +485,7 @@
   <div class="release-band">
     <div class="shell release-inner">
       <div>
-        <p class="eyebrow">最新稳定版本</p>
+        <p class="eyebrow">最新版本</p>
         <h1 id="version-text">TC16</h1>
         <p class="release-summary">TC16 Windows 控制软件，适用于 Windows 10 / 11 64 位系统。</p>
         <div class="release-meta" aria-label="版本信息">
@@ -640,8 +640,8 @@
     const firmwareResourceMeta = document.getElementById("firmware-resource-meta");
     const resourceStatus = document.getElementById("resource-status");
 
-    function formatMiB(bytes) {
-      return `${(Number(bytes) / 1024 / 1024).toFixed(2)} MiB`;
+    function formatMB(bytes) {
+      return `${(Number(bytes) / 1000000).toFixed(2)} MB`;
     }
 
     function validateManifest(manifest) {
@@ -700,7 +700,7 @@
         validateManifest(manifest);
         versionText.textContent = `TC16 v${manifest.version}`;
         publishedDate.textContent = `发布于 ${manifest.published_at}`;
-        installerSize.textContent = formatMiB(manifest.size);
+        installerSize.textContent = formatMB(manifest.size);
         installerName.textContent = manifest.installer_name;
         installerSha256.textContent = manifest.sha256;
         downloadLink.href = manifest.installer_url;
@@ -730,14 +730,14 @@
         validateResources(resources);
         enableResourceLink(curveDownloadLink, resources.curve_bundle.url);
         enableResourceLink(curveGuideLink, resources.curve_guide.url);
-        curveResourceMeta.textContent = `${resources.curve_bundle.name} · ${formatMiB(resources.curve_bundle.size)}`;
+        curveResourceMeta.textContent = `${resources.curve_bundle.name} · ${formatMB(resources.curve_bundle.size)}`;
 
         firmwareTitle.textContent = `最新固件 SW ${resources.firmware.version}`;
         firmwareCompatibility.textContent = `适用 HW ${resources.firmware.hardware} / PCBA ${resources.firmware.pcba}`;
         enableResourceLink(firmwareDownloadLink, resources.firmware.url);
         enableResourceLink(firmwareGuideLink, resources.firmware_guide.url);
         enableResourceLink(firmwareHistoryLink, resources.firmware_history_url);
-        firmwareResourceMeta.textContent = `${resources.firmware.name} · ${formatMiB(resources.firmware.size)}`;
+        firmwareResourceMeta.textContent = `${resources.firmware.name} · ${formatMB(resources.firmware.size)}`;
         resourceStatus.textContent = "已加载配套资源";
       })
       .catch((error) => {
