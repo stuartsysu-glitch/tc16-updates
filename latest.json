@@ -5,14 +5,15 @@
   "published_at": "2026-09-28",
   "installer_name": "TC16-v3.2.14-20260928-Setup.exe",
   "installer_url": "https://github.com/stuartsysu-glitch/tc16-updates/releases/download/v3.2.14/TC16-v3.2.14-20260928-Setup.exe",
-  "size": 171695055,
-  "sha256": "371ea50c69c91569cc58ee182d4c7550f543a890dc9caf5f9963bd748ef76905",
+  "size": 54690321,
+  "sha256": "47929c578bb611a9c9bb51699ddcc5ea9b95378bac94d345dd8e0edc26fa9ecd",
   "mandatory": false,
   "release_notes": [
     "增加“设置”页面，集中放置更新入口和控温诊断记录功能。",
     "增加加热器保护与参数校验，检查限流、限压参数。",
     "优化温度曲线与 FFT 操作，曲线选点可查看阻抗、温度、互感和功率。",
     "增加设备曲线删除功能，优化设置和参数应用流程。",
-    "修复单通道再次开启 PID 时可能等待增益超时的问题，兼容 SW3.3.37 及后续固件的增益状态流程。"
+    "修复单通道再次开启 PID 时可能等待增益超时的问题，兼容 SW3.3.37 及后续固件的增益状态流程。",
+    "优化安装包构建依赖，下载大小减少至 54.69 MB，功能保持一致。"
   ]
 }
